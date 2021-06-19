@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goblogger</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link rel="stylesheet" href="gobloggerCss.css">
+        <link rel="stylesheet" href="responsive.css">
+        <script src="https://kit.fontawesome.com/abb159d4f6.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_LizMgLeYareTUOZuum35Q");
+        })();
+        </script>
+        <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    </head>
+
+    <body>
+        <span id="home.html"></span>
+        <header>
+            <div class="header-left">
+                <img class="header-icon" src="goblogger_logo.png">
+            </div>
+            <div class="header-middle">
+                <ul>
+                    <li><a href="#home.html">HOME</a></li>
+                    <li><a href="#about.html">ABOUT ME</a></li>
+                    <li><a href="#blog.html">BLOG</a></li>
+                    <li><a href="#diary.html">DEAR DIARY</a></li>
+                    <li><a href="#contact.html">CONTACT ME</a></li>
+                </ul>
+        </div>
+        </header>
+        <div class="image_blog">
+           
+            <img class="image" src="goblogger_coverpage.png">
+        </div>
+
+        <div>
+            <button class="btn_mywork"><a href="ContentsMain.html" style="color: #EEF1EF; text-decoration: none;">MY WORK</a></button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <span id="about.html"></span>
+        <div class="one_page">
+
+            <div class="page_left">
+                <div class="rect1"></div>
+                <div>
+                    <img class="My_pic" src="Ananyaa.png">
+                </div>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="main_icon">
+                    <ul>
+                        <li class="icon">
+                            <a href="https://www.instagram.com/ananya_unique21/" target="_blank">
+                                <button class="instagramy" style="border-radius: 20px;"><i class="fab fa-instagram"></i></button>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://www.facebook.com/ananya.chibber.21/" target="_blank">
+                            <button class="facebooky" style="border-radius: 20px;"><i class="fab fa-facebook-f"></i></button>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://www.linkedin.com/in/ananya-chibber-4291161bb/" target="_blank">
+                                <button class="liny" style="border-radius: 20px;"><i class="fab fa-linkedin-in"></i></button>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://github.com/ananyachibber21" target="_blank">
+                                <button class="githuby" style="border-radius: 20px;"><i class="fab fa-github"></i></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page_right">
+                    <h1>
+                        Hello! I am Ananya.
+                    </h1>
+                    <h2>
+                        Blogger
+                    </h2>
+                    <hr>
+                    <p>
+                       I am an Undergraduate in Bachelor of Technology, Computer Science. As my career demands me to be a good programmer, I do not forget that my passion always asked me to write my thoughts into content. So here I am to amalgamate my career and hobby into one and create a website where I could express myself through my blogs.
+                        <br>
+                        <br>
+                        I did coding to create this website and the rest are the blogs that I've written. All kinds of stories and poems that came into my thoughts are beautifully expressed by me. From my childhood, I am writing a personal diary which was hidden till now but lately, I felt that it is the time to come out of that box which is keeping me inside for years. This is what happens when people finally decide to find someplace in the world.
+                        <br>
+                        <br>
+                         It is not only me but anyone who feels that way, I motivate you to be the sunrise of the next dawn. I am always there for you - something that everyone wants to hear. Reach out to me anytime. I am happy to help you :)
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <span id="blog.html"></span>
+        <div class="two_page">
+            <div class="two_top">
+                <h1>My Works</h1>
+                <h2>
+                    Blogs
+                </h2>
+                <hr>
+            </div>
+
+            <div class="middle">
+                <p>Explore Your Interest</p>
+                <p style="font-size: 20px; color: #EEF1EF; margin-top: -30px; letter-spacing: 3px;">Read,learn and enjoy the moments of Surfing</p>
+            </div>
+
+            <div class="bottom">
+                <ul class="flex-type">
+                    <li class="li1"><hr>
+                        <i class="fas fa-book-reader"></i>
+                        <div class="overlay">
+                            <hr>
+                            <div class="text">Prose</div>
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                    </li>
+                    <li class="li1">
+                        <hr>
+                        <i class="fas fa-user-edit"></i>
+                        <div class="overlay">
+                            <hr>
+                            <div class="text">Poetry</div>
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                    </li>
+                    <li class="li1">
+                        <hr>
+                        <i class="fas fa-brain"></i>
+                        <div class="overlay">
+                            <hr>
+                            <div class="text">Thoughts</div>
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </li>
+                    <li class="li1">
+                        <hr>
+                        <i class="fas fa-plane"></i>
+                        <div class="overlay">
+                            <hr>
+                            <div class="text">Travelling</div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </li>
+                    <li class="li1">
+                        <hr>
+                        <i class="fas fa-palette"></i>
+                        <div class="overlay">
+                            <hr>
+                            <div class="text">Art</div>
+                            <i class="fas fa-palette"></i>
+                        </div>
+                    </li>
+                    <li class="li1">
+                        <hr>
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="overlay">
+                            <hr>
+                            <div class="text">Coding</div>
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </li>
+                </ul>
+                <hr style="color: #EEF1EF; opacity: 0.3; width: 95%; padding-top: 3px; margin-right: 18px;">
+            </div>
+        </div>
+
+        <span id="diary.html"></span>
+        <div class="three_page">
+            <div class="three_top">
+                <h1>My Diary</h1>
+                <h2>Dear Diary</h2>
+                <hr>
+            </div>
+
+            <div class="images">
+                <img class="im" src="diary_img.jpg" width="60%" height="320px">
+                <img class="im" src="rosediary.jpg" width="39%" height="320px">
+                <br>
+                <img class="im" src="Stickynotes_img.jpg" width="35%" height="300px">
+                <img class="im" src="miracles_img.png" width="25%" height="300px">
+                <img class="im" src="Paris_img.jpg" width="38%" height="300px">
+            </div>
+
+            <div class="three_bottom">
+                <h2>__________The Story Of My Life__________</h2>
+                <button class="btn_mywork2"><a href="Diary.html" style="color: #EEF1EF; text-decoration: none;">My Space</a></button>
+            </div>
+        </div>
+
+        <div class="four_page">
+            <div class="three_top">
+                <h1>Contact Me</h1>
+                <h2>
+                    Get In Touch
+                </h2>
+                <hr>
+            </div>
+
+            <div class="four_left">
+                <form id="contact-form">
+                    <div>
+                        <input class="txt" type="text" name="fullname" size="50" placeholder="Enter your Full Name....">
+                    </div>
+                    <div>
+                        <input class="txt" type="text" name="email" size= "50" placeholder="Enter your Email Id....">
+                    </div>
+                    <div>
+                        <textarea class="area" name="subject" placeholder="Enter your message/feedback" rows="5" cols="50"></textarea>
+                        <br>
+                    </div>
+                    <div>
+                        <button class="btn_mywork3" style="border-radius: 5px; cursor: pointer;"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfqbtwtDHKWpHmVgLvwRHMZgvSQNpjwgncKMTXXNdxdNCxpnGPpxtLWBcMdncWGHTdzWXV" style="color: #EEF1EF; text-decoration: none;">Send</a></button>
+                    </div>
+                </form>
+            </div>
+
+            <span id="contact.html"></span>
+            <div class="four_right">
+                <p class="p1"><i class="fas fa-user" style="font-size: 40px; color: #EEF1EF; padding: 0;"> Ananya Chibber</i></p>
+                
+                <p class="p2"><i class="fas fa-envelope" style="font-size: 30px; color: #EEF1EF; padding-top: 15px;"> ananyaunique21@gmail.com</i></p>
+                <p class="p3"><i class="fas fa-phone-alt" style="font-size: 30px; color: #EEF1EF; padding: 0;"> 91-7983244425</i></p>
+                <p class="touch" style="font-size: 20px; color: #D6283A; padding-top: 5px; font-family: New Century Schoolbook, TeX Gyre Schola, serif; font-weight: bold;"> Telegram: @Ananya2106</p>
+                <p class="touch" style="font-size: 20px; color: #D6283A; font-family: New Century Schoolbook, TeX Gyre Schola, serif; font-weight: bold;"> Discord: Ananya#5956</p>
+                <div class="main_icon">
+                    <ul class="listtype">
+                        <li class="icon2">
+                            <a href="https://www.instagram.com/ananya_unique21/" target="_blank">
+                                <button class="instagramy" style="border-radius: 20px;"><i class="fab fa-instagram"></i></button>
+                            </a>
+                        </li>
+                        <li class="icon2">
+                            <a href="https://www.facebook.com/ananya.chibber.21/" target="_blank">
+                            <button class="facebooky" style="border-radius: 20px;"><i class="fab fa-facebook-f"></i></button>
+                            </a>
+                        </li>
+                        <li class="icon2">
+                            <a href="https://www.linkedin.com/in/ananya-chibber-4291161bb/" target="_blank">
+                                <button class="liny" style="border-radius: 20px;"><i class="fab fa-linkedin-in"></i></button>
+                            </a>
+                        </li>
+                        <li class="icon2">
+                            <a href="https://github.com/ananyachibber21" target="_blank">
+                                <button class="githuby" style="border-radius: 20px;"><i class="fab fa-github"></i></button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="finally">
+        </div>
+        
+        <footer>
+            <p>©2021-Goblogger || All Rights Preserved</p>
+        </footer>
+    </body>
+</html>
